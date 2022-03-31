@@ -1,16 +1,21 @@
 package com.example.dados_pessoais_versao_ii;
 
-public class Pessoa {
+import java.io.Serializable;
+
+public class Pessoa implements Serializable {
 
     private String nome;
     private String morada;
     private String telemovel;
+    private String email;
     private String sexo;
 
-    public Pessoa(String nome, String morada, String telemovel, String sexo) {
+
+    public Pessoa(String nome, String morada, String telemovel,String email, String sexo) {
         this.nome = nome;
         this.morada = morada;
         this.telemovel = telemovel;
+        this.email = email;
         this.sexo = sexo;
     }
 
