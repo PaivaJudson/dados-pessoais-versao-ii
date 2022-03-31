@@ -14,5 +14,10 @@ public class Pessoa {
         this.sexo = sexo;
     }
 
-
+    public String mostrarDados(){
+        if (sexo.equalsIgnoreCase("masculino") || sexo.equalsIgnoreCase("m")){
+            return "O "+ nome + " vive em "+ morada + " tem o telemóvel: "+telemovel;
+        }
+        return "A "+ nome + " vive em "+ morada + " tem o telemóvel: "+telemovel;
+    }
 }
